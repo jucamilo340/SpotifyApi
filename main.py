@@ -53,6 +53,12 @@ if __name__ == '__main__':
                           'Tipo de track':track['type'],
                           'artista': track["artists"][0]["name"],
                           'Album': track["album"]["name"],
+                          'Popularidad': track["popularity"],
+                          'Fecha de lanzamiento': track["album"]["release_date"],
+                          'Id': track["id"],
+                          'Uri': track["uri"],
+                          'Generos': artista_data["genres"]
+
 
                           }
                 tracks.append(trackAux)
@@ -61,7 +67,7 @@ if __name__ == '__main__':
 
 
             tabla[artista_data['name']]=artista
-    print(tabla)
+    print(tabla["Led Zeppelin"])
 
 
 
